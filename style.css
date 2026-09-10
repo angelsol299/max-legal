@@ -1,0 +1,51 @@
+/* No web fonts, no analytics, no third-party requests of any kind. A privacy
+   policy that phoned out to a CDN to render itself would be a poor advert for
+   an app whose whole claim is that it collects nothing. */
+:root {
+  --ink: #2E2B29;
+  --ground: #F6F4F1;
+  --surface: #FFFFFF;
+  --slate: #5B7C9D;
+  --slate-deep: #2F455B;
+  --muted: #7A736C;
+  --divider: #E7E3DD;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0 20px 72px;
+  background: var(--ground);
+  color: var(--ink);
+  font: 16px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 42rem; margin: 0 auto; }
+header { display: flex; align-items: center; gap: 12px; padding: 40px 0 28px; }
+.tile {
+  width: 46px; height: 46px; flex: none;
+  border-radius: 11px; background: var(--slate);
+  display: grid; place-items: center; position: relative;
+}
+.tile b { color: #fff; font-size: 23px; font-weight: 800; line-height: 1; margin-top: 5px; }
+.tile i { position: absolute; top: 11px; width: 4px; height: 4px; border-radius: 50%; background: #fff; }
+.tile i.l { left: 16px; } .tile i.r { right: 16px; }
+.brand { font-size: 25px; font-weight: 800; letter-spacing: -0.5px; }
+h1 { font-size: 30px; line-height: 1.2; letter-spacing: -0.6px; margin: 0 0 6px; }
+h2 { font-size: 19px; margin: 34px 0 10px; letter-spacing: -0.2px; }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 26px; }
+p, li { margin: 0 0 14px; }
+ul { padding-left: 22px; }
+a { color: var(--slate-deep); }
+a:hover { text-decoration: none; }
+.card {
+  background: var(--surface); border: 1px solid var(--divider);
+  border-radius: 16px; padding: 20px 22px; margin: 26px 0;
+}
+.card p:last-child, .card ul:last-child { margin-bottom: 0; }
+.mail { font-weight: 700; font-size: 17px; }
+nav { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--divider); font-size: 15px; }
+nav a { margin-right: 18px; }
+footer { margin-top: 34px; color: var(--muted); font-size: 13px; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #F1EEEA; --ground: #1B1A19; --surface: #242322; --divider: #37342F; --muted: #9C948B; --slate-deep: #A9C0D8; }
+}
