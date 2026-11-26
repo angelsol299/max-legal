@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mäx — Privacy Policy</title>
-<meta name="description" content="Mäx collects no personal data. Everything the app remembers stays on your device; only a question you type into the Tutor leaves it.">
+<meta name="description" content="Mäx collects no personal data. Everything the app remembers stays on your device; only what you send to Mäx AI, and the sentences Mäx speaks, leave it.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,90 +12,71 @@
 <header><span class="tile"><i class="l"></i><i class="r"></i><b>M</b></span><span class="brand">Mäx</span></header>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 26 September 2026</p>
+<p class="updated">Last updated: 24 November 2026</p>
 
-<p>Mäx has no account, no analytics, no advertising, no tracking, and no
-third-party SDK that reports anything about you. Your progress stays on your
-phone. Two things use the internet, and both are described below: Mäx AI,
-which sends what you type to it to an AI provider to write the answer, and the
-download of the app’s natural voices.</p>
+<p>Mäx has no account, no analytics, no advertising, no tracking, and no third-party SDK that reports anything about you. Your progress stays on your phone. Three things use the internet, all described below: Mäx AI, which sends what you type or say to it to an AI provider to write the answer; Mäx’s natural voice, which turns his replies into speech; and the download of the app’s recorded voices.</p>
 
 <h2>What the app stores</h2>
+
 <p>Everything the app remembers is written to storage on your own device:</p>
+
 <ul>
   <li>the language you are learning and the language you read explanations in</li>
   <li>your level and daily goal</li>
   <li>which words you have saved or marked as known, and how well you know them</li>
   <li>which stories you have read, and the flashcard decks you have built</li>
-  <li>how many minutes you have studied on each day, which is what the streak,
-    the week chart and the six-month heatmap are drawn from</li>
-  <li>your conversation with Mäx AI, kept so it is still there when you come back</li>
+  <li>how many minutes you have studied on each day, which is what the streak, the week chart and the six-month heatmap are drawn from</li>
+  <li>your conversation with the Mäx AI tutor, kept so it is still there when you come back (spoken conversations in Talk to Mäx are not kept)</li>
+  <li>your recent mock-exam results</li>
   <li>whether you have agreed to Mäx AI sending your questions to DeepSeek</li>
 </ul>
-<p>None of it is backed up to us: there is no account and nothing to back it
-up to.</p>
 
-<h2>Mäx AI (the Tutor and the deck builder)</h2>
-<p>Mäx AI answers in two places: the Tutor screen, and “describe your deck” in
-the flashcard deck builder. The first time you use either, the app explains
-what is sent and asks for your permission; nothing is sent until you allow
-it.</p>
-<p>When you then send a question or a deck description, that text — together
-with the language you are learning, the language you read explanations in, and
-your level — is sent to our server, which passes it to DeepSeek, an AI
-provider, to compose the answer. The deck builder also sends the app’s own word
-list, so the answer can only pick words the app contains. Nothing else goes
-with it: not your name, not your progress, not the words you have saved, and no
-identifier that ties the request to you.</p>
-<p>We keep no record of the conversation. The transcript you see on the Tutor
-screen is stored on your device only, and clearing it or deleting the app
-removes it. DeepSeek processes the request under its own terms and privacy
-policy.</p>
+<p>None of it is backed up to us: there is no account and nothing to back it up to.</p>
+
+<h2>Mäx AI (the Tutor, the deck builder, Talk to Mäx and the mock exams)</h2>
+
+<p>Mäx AI answers in four places: the Tutor screen; "describe your deck" in the flashcard deck builder; Talk to Mäx, a spoken conversation; and the mock exams, where it marks your writing and speaking and plays your partner in the oral exam. The first time you use any of them, the app explains what is sent and asks for your permission; nothing is sent until you allow it.</p>
+
+<p>What is sent is what you give it — your question, your deck description, the text of what you said in a conversation or an oral exam, or your exam answer — together with the language you are learning, the language you read explanations in, and your level. It goes to our server, which passes it to DeepSeek, an AI provider, to compose the answer. The deck builder also sends the app’s own word list, so the answer can only pick words the app contains, and a conversation sends the lines said so far, so Mäx can follow it. Nothing else goes with it: not your name, not your progress, not the words you have saved, and no identifier that ties the request to you.</p>
+
+<p>We keep no record of any of it. The Tutor transcript and your exam results are stored on your device only, and clearing them or deleting the app removes them. DeepSeek processes the request under its own terms and privacy policy. Our server runs on Vercel.</p>
+
+<h2>Mäx’s natural voice</h2>
+
+<p>In Talk to Mäx and in the oral exams, Mäx speaks his replies in a natural voice. Each sentence he says — his own words, never yours — is sent with the name of the voice to our voice server, which turns it into audio and sends it back. The server runs on a machine we rent from Hetzner in the EU (Finland). It keeps recently spoken sentences in memory for a short while so a repeated sentence comes back faster, keeps no log of requests, and stores nothing about you. Without a connection, Mäx uses your device’s own voice.</p>
 
 <h2>Voice downloads</h2>
-<p>The natural voices that read sentences, stories and words aloud are recorded
-ahead of time and downloaded in the background from our static server, for the
-course you are learning. Only the files are requested; nothing about you or
-your progress is sent. Until a voice has downloaded, the app uses your device’s
-own voice.</p>
-<p>Apart from Mäx AI and the voice downloads, the app makes no network
-requests: every exercise works offline.</p>
+
+<p>The natural voices that read sentences, stories and words aloud are recorded ahead of time and downloaded in the background from our static server, for the course you are learning. Only the files are requested; nothing about you or your progress is sent. Until a voice has downloaded, the app uses your device’s own voice.</p>
+
+<p>Apart from Mäx AI, Mäx’s natural voice and the voice downloads, the app makes no network requests: every exercise works offline.</p>
 
 <h2>Microphone and speech recognition</h2>
-<p>The speaking drill is the only feature that uses the microphone, and only
-while you are actively using it. When you tap the microphone button, iOS listens
-and converts what you said to text so the app can compare it with the sentence
-on screen.</p>
-<p>Where iOS supports on-device recognition for your language, that conversion
-happens entirely on your phone. For some languages iOS instead sends the audio
-to Apple’s own speech recognition service; that transfer is made by iOS, is
-governed by <a href="https://www.apple.com/legal/privacy/">Apple’s privacy
-policy</a>, and is the same mechanism used by dictation on the system
-keyboard.</p>
-<p>In neither case does Mäx record, store or transmit audio. The recognised text
-is compared, scored and discarded. If you decline the microphone permission, the
-speaking drill explains that and the rest of the app carries on working.</p>
+
+<p>Three features use the microphone, and only while you are using them: the speaking drill, Talk to Mäx and the oral part of the mock exams. Your phone’s own speech recognition listens and converts what you said to text. In the speaking drill the app compares that text with the sentence on screen; in a conversation or an oral exam it is sent to Mäx AI as described above. While a conversation or an oral exam is open, the microphone listens for your turn; it stops when you leave the screen.</p>
+
+<p>Where your phone supports on-device recognition for your language, that conversion happens entirely on the phone. For some languages the system instead sends the audio to its own speech recognition service: Apple’s on an iPhone, governed by <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>, and Google’s on Android, governed by <a href="https://policies.google.com/privacy">Google’s privacy policy</a>. That transfer is made by the operating system, and is the same mechanism used by dictation on the system keyboard.</p>
+
+<p>In no case does Mäx record, store or transmit audio. In the speaking drill the recognised text is compared, scored and discarded. If you decline the microphone permission, the feature explains that and the rest of the app carries on working.</p>
 
 <h2>Children</h2>
-<p>The app is suitable for all ages. It asks for no name, age or contact
-details, and Mäx AI only ever receives what someone chooses to type to it,
-after agreeing to that.</p>
+
+<p>The app is suitable for all ages. It asks for no name, age or contact details, and Mäx AI only ever receives what someone chooses to type or say to it, after agreeing to that.</p>
 
 <h2>Deleting your data</h2>
+
 <p>Two ways, both immediate and complete:</p>
+
 <ul>
-  <li><strong>Settings → Reset progress</strong> inside the app clears saved
-      words, streak, history, XP and the Mäx AI conversation.</li>
-  <li><strong>Deleting the app</strong> removes everything, since all of it
-      lives inside the app’s own storage.</li>
+  <li><strong>Settings → Reset progress</strong> inside the app clears saved words, streak, history, XP, exam results and the Mäx AI conversation.</li>
+  <li><strong>Deleting the app</strong> removes everything, since all of it lives inside the app’s own storage.</li>
 </ul>
-<p>There is no copy anywhere else, so there is nothing to request from us and
-nothing to revoke.</p>
+
+<p>There is no copy anywhere else, so there is nothing to request from us and nothing to revoke.</p>
 
 <h2>Changes</h2>
-<p>If this policy ever changes, the new version will be published here and the
-date at the top updated. A change that materially affects what is collected
-would ship alongside an app update describing it.</p>
+
+<p>If this policy ever changes, the new version will be published here and the date at the top updated. A change that materially affects what is collected would ship alongside an app update describing it.</p>
 
 <h2>Contact</h2>
 <div class="card">
